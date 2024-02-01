@@ -24,7 +24,7 @@ const Navbar = () => {
         >
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
           <p className="text-white text-[23px] font-bold cursor-pointer flex">
-            Ethan Huang's &nbsp;
+            Ethan Huang &nbsp;
             <span className="sm:block hidden"> Portfolio</span></p>
 
         </Link>
@@ -38,7 +38,7 @@ const Navbar = () => {
                   : "text-secondary"
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(Link.title)}>
-              <a href={`#${Link.id}`}>{Link.title}</a>
+              <a href={Link.id}>{Link.title}</a>
                
             </li>
           ))}
@@ -66,7 +66,7 @@ const Navbar = () => {
                   setToggle(!toggle);
                   setActive(Link.title);
                   }}>
-                <a href={`#${Link.id}`}>{Link.title}</a>
+                <a href={Link.id}>{Link.title}</a>
               </li>
             ))}
           </ul>

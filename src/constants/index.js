@@ -44,19 +44,19 @@ import {
   
   export const navLinks = [
     {
-      id: "about",
+      id: "#about",
       title: "About",
     },
     {
-      id: "work",
+      id: "#work",
       title: "Work",
     },
     {
-      id: "contact",
+      id: "#contact",
       title: "Contact",
     },
     {
-      id: "CV",
+      id: "https://drive.google.com/file/d/1_KYckn9V702zhFrbj5_SMsu5XjiwKURN/view",
       title: "CV",
     },
   ];
@@ -101,6 +101,7 @@ import {
       name: "JavaScript",
       icon: javascript,
     },
+    /*
     {
       name: "Racket",
       icon: Racket,
@@ -113,6 +114,7 @@ import {
       name: "LaTeX",
       icon: Latex,
     },
+    */
     {
       name: "git",
       icon: git,
@@ -141,10 +143,12 @@ import {
       name: "NumPy",
       icon: NumPy,
     },
+    /*
     {
       name: "Matplotlib",
       icon: Matplotlib,
     },
+    */
     {
       name: "React JS",
       icon: reactjs,

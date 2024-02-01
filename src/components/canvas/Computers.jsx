@@ -3,7 +3,6 @@ import { Canvas } from '@react-three/fiber';
 import{ OrbitControls, Preload, useGLTF } from '@react-three/drei';
 
 import CanvasLoader from '../Loader';
-import { m } from 'framer-motion';
 
 const Computers = ({ isMobile }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
@@ -23,7 +22,7 @@ const Computers = ({ isMobile }) => {
 
       <primitive 
         object={computer.scene}
-        scale={isMobile ? 11 : 12}
+        scale={isMobile ? 5 : 12}
         position={isMobile ? [-1, -3, -1] : [-1, -3.25, -1]}
         rotation={[-0.00, -0.0, -0.0]}
         />
@@ -56,10 +55,11 @@ const ComputersCanvas = () => {
   }, []);
   return (
     <Canvas
-      frameLoop="demand"
+      frameloop="demand"
       shadows
+      dpr={[1, 2]}
       camera={{ position: [20, 3, 5], fov: 25 }}
-      gl={{ preserveDrawingBuffer: true }}
+      gl={{ preserveDrawingBuffer: true, precision: "lowp" }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
