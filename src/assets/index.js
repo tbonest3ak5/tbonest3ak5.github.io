@@ -18,7 +18,7 @@ import VSCode from "./tech/VSCode.png";
 import Fusion360 from "./tech/Fusion360.png";
 import Inventor from "./tech/Inventor.png";
 import Solidworks from "./tech/Solidworks.png";
-import OnShape from "./tech/Onshape.png";
+import OnShape from "./tech/OnShape.png";
 import NumPy from "./tech/NumPy.png";
 import Matplotlib from "./tech/Matplotlib.png";
 import Tensorflow from "./tech/Tensorflow.png";
